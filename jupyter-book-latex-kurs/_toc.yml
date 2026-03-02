@@ -1,0 +1,19 @@
+format: jb-book
+root: intro
+chapters:
+  - file: 01-workflow
+  - file: 01-installation
+  - file: 02-dokumentklassen-und-praeambel
+  - file: 03-textsatz-und-typografie
+  - file: 04-struktur-und-verweise
+  - file: 05-mathematik-grundlagen
+  - file: 06-mathematik-fortgeschritten
+  - file: 07-makros-und-wiederverwendung
+  - file: 08-zaehler-und-theoreme
+  - file: 09-tabellen-und-layout
+  - file: 10-abbildungen-und-floats
+  - file: 11-index-und-stichwoerter
+  - file: 12-literatur-und-zitieren
+  - file: 13-build-und-fehlersuche
+  - file: 14-beamer
+  - file: 15-projektvorlagen-und-uebungen
