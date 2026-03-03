@@ -20,7 +20,6 @@ project:
     - file: 12-literatur-und-zitieren.md
     - file: 13-build-und-fehlersuche.md
     - file: 14-beamer.md
-    - file: 15-projektvorlagen-und-uebungen.md
 site:
   template: book-theme
   options:
