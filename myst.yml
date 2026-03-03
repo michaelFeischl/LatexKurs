@@ -1,0 +1,28 @@
+version: 1
+project:
+  title: 'LaTeX-Kurs: Modern und Praxisnah'
+  authors:
+    - name: Aktualisierte Kursfassung
+  toc:
+    - file: intro.md
+    - file: 01-workflow.md
+    - file: 01-installation.md
+    - file: 02-dokumentklassen-und-praeambel.md
+    - file: 03-textsatz-und-typografie.md
+    - file: 04-struktur-und-verweise.md
+    - file: 05-mathematik-grundlagen.md
+    - file: 06-mathematik-fortgeschritten.md
+    - file: 07-makros-und-wiederverwendung.md
+    - file: 08-zaehler-und-theoreme.md
+    - file: 09-tabellen-und-layout.md
+    - file: 10-abbildungen-und-floats.md
+    - file: 11-index-und-stichwoerter.md
+    - file: 12-literatur-und-zitieren.md
+    - file: 13-build-und-fehlersuche.md
+    - file: 14-beamer.md
+    - file: 15-projektvorlagen-und-uebungen.md
+site:
+  options:
+    folders: true
+  template: book-theme
+  base_url: /EPROG_LatexKurs/
