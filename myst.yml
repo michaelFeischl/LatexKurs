@@ -1,8 +1,6 @@
 version: 1
 project:
   title: 'LaTeX-Grundkurs'
-  authors:
-    - name: Aktualisierte Kursfassung
   toc:
     - file: intro.md
     - file: 01-workflow.md
@@ -23,6 +21,6 @@ project:
 site:
   template: book-theme
   options:
-    logo: LaTeX_logo.png
+    logo: TUWien.png
     folders: true
     base_url: /LatexKurs/
