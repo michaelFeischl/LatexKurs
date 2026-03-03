@@ -23,5 +23,6 @@ project:
 site:
   template: book-theme
   options:
+    logo: LaTeX_logo.png
     folders: true
     base_url: /LatexKurs/
