@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:3005/sitemap_style.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3006/sitemap_style.xsl" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3005</loc>
+    <loc>http://localhost:3006</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/workflow</loc>
+    <loc>http://localhost:3006/workflow</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/installation</loc>
+    <loc>http://localhost:3006/installation</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/dokumentklassen-und-praeambel</loc>
+    <loc>http://localhost:3006/dokumentklassen-und-praeambel</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/textsatz-und-typografie</loc>
+    <loc>http://localhost:3006/textsatz-und-typografie</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/struktur-und-verweise</loc>
+    <loc>http://localhost:3006/struktur-und-verweise</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/mathematik-grundlagen</loc>
+    <loc>http://localhost:3006/mathematik-grundlagen</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/mathematik-fortgeschritten</loc>
+    <loc>http://localhost:3006/mathematik-fortgeschritten</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/makros-und-wiederverwendung</loc>
+    <loc>http://localhost:3006/makros-und-wiederverwendung</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/zaehler-und-theoreme</loc>
+    <loc>http://localhost:3006/zaehler-und-theoreme</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/tabellen-und-layout</loc>
+    <loc>http://localhost:3006/tabellen-und-layout</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/abbildungen-und-floats</loc>
+    <loc>http://localhost:3006/abbildungen-und-floats</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/index-und-stichwoerter</loc>
+    <loc>http://localhost:3006/index-und-stichwoerter</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/literatur-und-zitieren</loc>
+    <loc>http://localhost:3006/literatur-und-zitieren</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/build-und-fehlersuche</loc>
+    <loc>http://localhost:3006/build-und-fehlersuche</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/beamer</loc>
+    <loc>http://localhost:3006/beamer</loc>
   </url>
   <url>
-    <loc>http://localhost:3005/projektvorlagen-und-uebungen</loc>
+    <loc>http://localhost:3006/projektvorlagen-und-uebungen</loc>
   </url>
 </urlset>
