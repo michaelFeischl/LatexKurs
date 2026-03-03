@@ -9,6 +9,7 @@ A    & 1.23 & m \\
 B    & 4.56 & m
 \end{tabular}
 ```
+In `tabular{lcr}` definiert jede Position eine Spalte (`l`, `c`, `r`). `&` trennt Spalten, `\\` beendet eine Tabellenzeile.
 
 Spaltentypen:
 
@@ -29,6 +30,7 @@ Spaltentypen:
   \bottomrule
 \end{tabular}
 ```
+`\toprule`, `\midrule` und `\bottomrule` kommen aus `booktabs` und ersetzen harte Doppel-/Vertikallinien durch saubere horizontale Struktur.
 
 ## 3. Tabellen als Float
 
@@ -40,12 +42,14 @@ Spaltentypen:
   ...
 \end{table}
 ```
+`table` ist eine Float-Umgebung; `[htbp]` gibt Platzierungswünsche an. `\label` sollte nach `\caption` stehen, damit die Tabellenreferenz korrekt ist.
 
 ## 4. Mehrspaltige Zellen
 
 ```latex
 \multicolumn{2}{c}{Kopf}
 ```
+`\multicolumn{2}{c}{...}` fasst zwei Spalten zu einer Zelle zusammen; `c` gibt die Ausrichtung des zusammengefassten Inhalts an.
 
 ## 5. Minipage für nebeneinanderliegende Inhalte
 
@@ -58,6 +62,7 @@ Linker Inhalt
 Rechter Inhalt
 \end{minipage}
 ```
+`minipage` erzeugt eine Box mit fester Breite. `[t]` richtet beide Boxen oben aus, `\hfill` verteilt den horizontalen Abstand dazwischen.
 
 ## 6. Wann `tabbing` sinnvoll ist
 

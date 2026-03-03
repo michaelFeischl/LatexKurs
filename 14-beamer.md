@@ -10,6 +10,7 @@
 \author{Max Mustermann}
 \date{\today}
 ```
+`beamer` ist die Präsentationsklasse. `\title`, `\author` und `\date` setzen Metadaten, die später z. B. auf der Titelfolie verwendet werden.
 
 ## 2. Grundstruktur einer Präsentation
 
@@ -31,6 +32,7 @@
 
 \end{document}
 ```
+Jede `frame`-Umgebung entspricht einer Folie. `\section{...}` strukturiert die Präsentation und kann in Agenda-/Navigationsansichten erscheinen.
 
 ## 3. Block-Umgebungen
 
@@ -47,6 +49,7 @@ Text
 Text
 \end{alertblock}
 ```
+Die Blocktypen unterscheiden sich nur in der visuellen Hervorhebung: neutral (`block`), beispielhaft (`exampleblock`) und warnend (`alertblock`).
 
 ## 4. Overlays
 
@@ -59,6 +62,7 @@ Elementweise Einblendung:
   \item<3-> Dritter Punkt
 \end{itemize}
 ```
+`<1->`, `<2->`, ... sind Overlay-Spezifikationen: Der Punkt erscheint ab der angegebenen Folie innerhalb desselben Frames.
 
 Mit `\pause`:
 
@@ -67,6 +71,7 @@ Erster Teil\pause
 Zweiter Teil\pause
 Dritter Teil
 ```
+`\pause` teilt den Frame in aufeinanderfolgende Einblendeschritte, ohne die Umgebung zu wechseln.
 
 ## 5. Lesbarkeit von Folien
 
@@ -80,6 +85,7 @@ Dritter Teil
 ```latex
 \documentclass[handout]{beamer}
 ```
+Die Option `handout` deaktiviert Overlays, sodass jede Folie nur einmal in der Druckfassung erscheint.
 
 Damit entfallen Animationseffekte in einer druckfreundlichen Version.
 

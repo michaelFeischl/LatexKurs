@@ -12,9 +12,13 @@ Vorteile:
 - gute Wiederverwendbarkeit bei großen Dokumenten,
 - klare Versionshistorie bei Teamarbeit.
 
-## 2. Lokale Arbeit mit `pdflatex`
+## 2. Ablauf
 
-Minimallauf:
+LaTeX muss kompiliert werden, d.h., der Quelltext muss in ein PDF übersetzt werden. Dazu benötigt man einen Kompiler. Es gibt sehr viele verschiedene Varianten, wir besprechen hier nur zwei davon.
+
+## 2.1. Lokale Arbeit mit `pdflatex`
+
+Minimal Kompilierung im Terminal
 
 ```bash
 pdflatex main.tex
@@ -29,15 +33,15 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-Warum mehrere Läufe?
+Warum mehrere Kompilierdurchgänge?
 
-- Beim ersten Lauf werden Hilfsdateien erstellt (`.aux`, `.toc`, `.bcf` ...).
+- Beim ersten Durchgang werden Hilfsdateien erstellt (`.aux`, `.toc`, `.bcf` ...).
 - Danach werden Referenzen, Verzeichnisse und Literatur aufgelöst.
-- Ein letzter Lauf stabilisiert Seiten- und Nummernverweise.
+- Ein letzter Durchgang stabilisiert Seiten- und Nummernverweise.
 
-## 3. Online-Arbeit mit Overleaf
+## 2.2. Online-Arbeit mit Overleaf
 
-Overleaf ist praktisch für schnellen Start und Zusammenarbeit.
+Overleaf ist praktisch für schnellen Start und Zusammenarbeit (www.overleaf.com), benötigt aber einen Account.
 
 Empfohlene Regeln:
 

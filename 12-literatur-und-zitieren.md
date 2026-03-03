@@ -21,6 +21,7 @@ Präambel:
 ]{biblatex}
 \addbibresource{literatur.bib}
 ```
+`backend=biber` legt das Auswertungswerkzeug fest. `style=authoryear` bestimmt das Zitatformat, und `\addbibresource{...}` bindet die `.bib`-Datei ein.
 
 Zitate:
 
@@ -28,12 +29,14 @@ Zitate:
 \textcite{lamport1994} beschreibt die Grundlagen.
 Eine alternative Darstellung findet sich in \parencite{knuth1984}.
 ```
+`\textcite{...}` erzeugt ein Autor-im-Text-Zitat, `\parencite{...}` ein Klammerzitat. Die Schlüssel in `{...}` müssen exakt mit den Bib-Einträgen übereinstimmen.
 
 Literaturverzeichnis:
 
 ```latex
 \printbibliography
 ```
+Dieser Befehl gibt alle tatsächlich zitierten Einträge als Literaturverzeichnis aus (abhängig von Stil/Filteroptionen).
 
 ## 3. Build-Ablauf
 
@@ -61,6 +64,7 @@ pdflatex main.tex
   year      = {1984}
 }
 ```
+`@book` ist der Eintragstyp, `lamport1994` der Zitier-Schlüssel. Felder wie `author`, `title`, `publisher` und `year` liefern die Metadaten für die Ausgabe.
 
 ## 5. Einträge sorgfältig pflegen
 

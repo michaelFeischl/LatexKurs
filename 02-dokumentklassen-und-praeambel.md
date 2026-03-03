@@ -7,6 +7,7 @@ Die Klasse bestimmt Grundstruktur und Standardlayout.
 ```latex
 \documentclass[a4paper,11pt]{article}
 ```
+`\documentclass` legt die Basis des Dokuments fest. Optionen in `[...]` konfigurieren das Layout, die Klasse in `{...}` bestimmt den Dokumenttyp.
 
 Häufig:
 
@@ -38,6 +39,7 @@ Typische Optionen in Textdokumenten:
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
 ```
+Jede `\usepackage{...}`-Zeile lädt ein Paket mit Zusatzfunktionen. Optionen wie `[ngerman]` oder `[hidelinks]` wirken nur auf das direkt folgende Paket.
 
 ## 4. Reihenfolge und Verantwortung von Paketen
 
@@ -60,6 +62,7 @@ Bei größeren Projekten:
 \input{preamble/packages}
 \input{preamble/macros}
 ```
+`\input{...}` kopiert den Inhalt der angegebenen Datei an genau diese Stelle ein. So bleibt `main.tex` schlank und die Konfiguration wartbar.
 
 Vorteile:
 
@@ -88,3 +91,4 @@ Beispieltext.
 
 \end{document}
 ```
+Die Präambel endet vor `\begin{document}`; ab dort steht der eigentliche Inhalt. Befehle wie `\maketitle` und `\tableofcontents` erzeugen Titel und Inhaltsverzeichnis automatisch.

@@ -13,6 +13,7 @@ Dies ist der erste Absatz.
 
 Dies ist der zweite Absatz.
 ```
+Die Leerzeile zwischen den Sätzen erzeugt einen neuen Absatz. Ohne Leerzeile würden beide Zeilen zum selben Absatz gehören.
 
 Absätze sollten inhaltlich begründet sein, nicht nur optisch.
 
@@ -21,6 +22,7 @@ Absätze sollten inhaltlich begründet sein, nicht nur optisch.
 ```latex
 \textbf{fett}, \textit{kursiv}, \emph{betont}
 ```
+Alle drei Befehle nutzen geschweifte Klammern für den Wirkbereich. `\emph{...}` ist semantisch, weil LaTeX je nach Kontext die passende Betonung wählt.
 
 Empfehlung:
 
@@ -40,6 +42,7 @@ Empfehlung:
   \item Schritt B
 \end{enumerate}
 ```
+`\begin{...}` und `\end{...}` öffnen und schließen jeweils eine Umgebung. `\item` startet pro Listenpunkt einen neuen Eintrag.
 
 ## 5. Ausrichtung und Blocksatz
 
@@ -53,6 +56,7 @@ Folgende Zeichen müssen als Befehl gesetzt werden:
 ```latex
 \% \$ \& \# \_ \{ \}
 ```
+Das vorangestellte `\` maskiert Sonderzeichen, damit sie als Zeichen und nicht als LaTeX-Steuerzeichen erscheinen.
 
 ## 7. Deutsche Typografie
 
@@ -64,6 +68,7 @@ Beispiel:
 ```latex
 \enquote{Das ist ein korrekt gesetztes Zitat.}
 ```
+`\enquote{...}` setzt sprachabhängig korrekte Anführungszeichen. Über `babel`/`csquotes` passt sich die Form automatisch an die Dokumentsprache an.
 
 ## 8. Lesbarkeit verbessern
 

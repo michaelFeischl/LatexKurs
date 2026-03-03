@@ -5,6 +5,7 @@
 ```latex
 \usepackage{graphicx}
 ```
+`graphicx` stellt `\includegraphics` und optionale Skalierung bereit; ohne dieses Paket können externe Bilder nicht eingebunden werden.
 
 ## 2. Grundmuster für Abbildungen
 
@@ -16,6 +17,7 @@
   \label{fig:ergebnisplot}
 \end{figure}
 ```
+`width=.75\textwidth` skaliert das Bild auf 75 % der Textbreite. `\caption` erzeugt die Nummer/Beschriftung, und `\label` macht die Abbildung referenzierbar.
 
 ## 3. Wahl des Dateiformats
 
@@ -37,6 +39,7 @@ Wichtig: LaTeX entscheidet final nach Umbruchregeln.
 \listoffigures
 \listoftables
 ```
+Diese Befehle erzeugen automatisch Verzeichnisse aus vorhandenen `figure`- und `table`-Beschriftungen.
 
 ## 6. Häufige Fehler
 

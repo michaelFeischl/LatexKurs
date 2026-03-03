@@ -1,6 +1,6 @@
 # Lokale Installation: Windows, macOS, Linux
 
-Dieses Kapitel beschreibt die lokale Einrichtung für den Kurs.
+Dieses Kapitel beschreibt die lokale Einrichtung von Latex, wenn du kein Overleaf verwenden willst.
 Für die lokale Kompilierung verwenden wir `pdflatex`.
 
 ## 1. Benötigte Software

@@ -15,6 +15,7 @@
     &= F
 \end{align}
 ```
+`&` markiert die gemeinsame Ausrichtungsstelle aller Zeilen. `\\` trennt die Zeilen, und `\notag` unterdrückt die Nummer genau in dieser Zeile.
 
 ## 2. Text in Formeln
 
@@ -23,6 +24,7 @@
   M &= \{x\in\mathbb{N} \mid x \text{ ist gerade}\}
 \end{align}
 ```
+`\text{...}` setzt normalen Text innerhalb der Formel. `\mathbb{N}` kommt aus `amssymb` und liefert das Symbol der natürlichen Zahlen.
 
 Für Zwischenkommentare in mehrzeiligen Formeln:
 
@@ -33,6 +35,7 @@ Für Zwischenkommentare in mehrzeiligen Formeln:
   f'(x) &= 2x
 \end{align}
 ```
+`\intertext{...}` fügt zwischen zwei Align-Zeilen erklärenden Fließtext ein, ohne die Ausrichtung zu zerstören.
 
 ## 3. Fallunterscheidungen
 
@@ -43,6 +46,7 @@ f(x)=
   -x,  & x < 0.
 \end{cases}
 ```
+`cases` baut eine Fallunterscheidung mit zwei Spalten auf: links der Ausdruck, rechts die Bedingung. Das `&` trennt diese Spalten.
 
 ## 4. Matrizen
 
@@ -54,6 +58,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 \]
 ```
+`pmatrix` erzeugt eine Matrix mit runden Klammern. In jeder Zeile trennt `&` die Spalten, `\\` startet die nächste Matrixzeile.
 
 Weitere Varianten: `matrix`, `bmatrix`, `vmatrix`.
 
@@ -69,6 +74,7 @@ Für eine logisch zusammenhängende, mehrzeilige Gleichung mit gemeinsamer Numme
 \end{split}
 \end{equation}
 ```
+`split` dient für eine mehrzeilige Gleichung mit nur einer gemeinsamen Nummer. Die Ausrichtung funktioniert wie bei `align` über `&` und `\\`.
 
 ## 6. Häufige Mathefehler
 

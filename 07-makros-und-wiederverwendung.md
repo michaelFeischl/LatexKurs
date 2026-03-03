@@ -15,12 +15,14 @@ Beispiel:
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\set}[2]{\left\{#1\,\middle|\,#2\right\}}
 ```
+`\newcommand{\Name}{...}` definiert einen neuen Befehl. Bei `\set` bedeuten `[2]` zwei Argumente; im Makrotext stehen sie als `#1` und `#2`.
 
 Anwendung:
 
 ```latex
 $\set{x\in\R}{x>0}$
 ```
+Beim Aufruf werden die zwei Argumente in die vorher definierten Platzhalter eingesetzt.
 
 ## 2. Pflicht- und optionale Argumente
 
@@ -28,6 +30,7 @@ $\set{x\in\R}{x>0}$
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 \newcommand{\skalar}[2]{\left\langle #1,#2 \right\rangle}
 ```
+`[1]` bzw. `[2]` gibt die Anzahl der Pflichtargumente an. `\left...\right` sorgt auch hier für automatisch passende Klammergrößen.
 
 ## 3. Bestehende Befehle sicher ersetzen
 
@@ -61,5 +64,6 @@ Gut:
 \newtheorem{lemma}[satz]{Lemma}
 \newtheorem{korollar}[satz]{Korollar}
 ```
+Die erste Zeile erzeugt den Zähler `satz` pro `section`. `lemma` und `korollar` teilen sich denselben Zähler durch die Referenz `[satz]`.
 
 So teilen sich alle Umgebungen eine gemeinsame Nummerierung pro Abschnitt.

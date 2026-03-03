@@ -7,6 +7,7 @@
 \subsection{Problemstellung}
 \subsubsection{Beispieldaten}
 ```
+Die Befehle erzeugen hierarchische Überschriftenebenen. Die Titel stehen jeweils in `{...}` und erscheinen automatisch im Inhaltsverzeichnis.
 
 In `report` und `book` kommt zusätzlich `\chapter{...}` dazu.
 
@@ -15,6 +16,7 @@ In `report` und `book` kommt zusätzlich `\chapter{...}` dazu.
 ```latex
 \tableofcontents
 ```
+`\tableofcontents` erstellt das Inhaltsverzeichnis aus den vorhandenen Überschriften. Nach Strukturänderungen sind meist zwei Läufe nötig, damit alles aktuell ist.
 
 Nach Änderungen an Überschriften: mindestens zweimal kompilieren.
 
@@ -24,6 +26,7 @@ Nach Änderungen an Überschriften: mindestens zweimal kompilieren.
 \section{Methode}\label{sec:methode}
 Siehe Abschnitt~\ref{sec:methode}.
 ```
+`\label{...}` speichert die Nummer der aktuellen Strukturstelle. `\ref{...}` gibt diese Nummer aus; `~` verhindert einen Zeilenumbruch zwischen Wort und Nummer.
 
 Für Gleichungen:
 
@@ -35,6 +38,7 @@ Für Gleichungen:
 
 Vgl. Gleichung~\eqref{eq:einstein}.
 ```
+`\eqref{...}` ist wie `\ref`, ergänzt aber automatisch Klammern für Gleichungsnummern.
 
 ## 4. Label-Konventionen
 
@@ -51,6 +55,7 @@ Empfehlte Präfixe:
 ```latex
 \usepackage[hidelinks]{hyperref}
 ```
+`hyperref` macht Referenzen klickbar. Die Option `hidelinks` unterdrückt farbige Rahmen um Links im PDF.
 
 Damit werden interne Verweise und Inhaltsverzeichnis-Einträge klickbar.
 
@@ -72,3 +77,4 @@ Damit werden interne Verweise und Inhaltsverzeichnis-Einträge klickbar.
 
 Wie in Abbildung~\ref{fig:messkurve} zu sehen, ...
 ```
+`[htbp]` sind Platzierungswünsche für den Float. `\caption` setzt die Beschriftung und Nummer, `\label` sollte direkt danach stehen, damit `\ref` korrekt auf die Abbildung zeigt.
