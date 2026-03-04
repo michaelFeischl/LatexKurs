@@ -7,7 +7,7 @@ Es gibt zwei verschieden Arten Formeln zu setzen:
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">Die Folge $x_n$ konvergiert gegen $0$.</code></pre> | Die Folge $x_n$ konvergiert gegen $0$. |
+| <pre><code class="language-latex">Die Folge \$x_n\$ konvergiert gegen \$0\$.</code></pre> | Die Folge $x_n$ konvergiert gegen $0$. |
 
 `$...$` schaltet in den Inline-Mathemodus. Mit `_` erzeugst du Indizes (`x_n`), und normaler Text bleibt außerhalb der Dollarzeichen.
 
