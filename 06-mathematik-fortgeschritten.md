@@ -18,7 +18,7 @@
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">\begin{align}<br>  M &= \{x\in\mathbb{N} \mid x \text{ ist gerade}\}<br>\end{align}</code></pre> | $$\begin{align} M &= \{x\in\mathbb{N} \mid x \text{ ist gerade}\} \end{align}$$ |
+| <pre><code class="language-latex">\begin{align}<br>  M &= \\{x\in\mathbb{N} \mid x \text{ ist gerade}\\}<br>\end{align}</code></pre> | $$\begin{align} M &= \{x\in\mathbb{N} \mid x \text{ ist gerade}\} \end{align}$$ |
 
 `\text{...}` setzt normalen Text innerhalb der Formel. `\mathbb{N}` kommt aus `amssymb` und liefert das Symbol der natürlichen Zahlen.
 

@@ -36,7 +36,7 @@ Es gibt zwei verschieden Arten Formeln zu setzen:
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">\left( \frac{a}{b} \right),\quad<br>\left\{ x \in \mathbb{R} \mid x > 0 \right\}</code></pre> | $$\left( \frac{a}{b} \right),\quad \left\{ x \in \mathbb{R} \mid x > 0 \right\}$$ |
+| <pre><code class="language-latex">\left( \frac{a}{b} \right),\quad<br>\left\\{ x \in \mathbb{R} \mid x > 0 \right\\}</code></pre> | $$\left( \frac{a}{b} \right),\quad \left\{ x \in \mathbb{R} \mid x > 0 \right\}$$ |
 
 `\left` und `\right` passen Klammergrößen automatisch an den Inhalt an. `\mid` erzeugt den senkrechten Strich als "mit"-Trenner in Mengen.
 
@@ -44,7 +44,7 @@ Es gibt zwei verschieden Arten Formeln zu setzen:
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">\sin x, \log x, \exp(x), \max\{a,b\}</code></pre> | $$\sin x, \log x, \exp(x), \max\{a,b\}$$ |
+| <pre><code class="language-latex">\sin x, \log x, \exp(x), \max\\{a,b\\}</code></pre> | $$\sin x, \log x, \exp(x), \max\{a,b\}$$ |
 
 Funktionsnamen werden als Befehle geschrieben (`\sin`, `\log`), damit sie aufrecht gesetzt werden. Bei `\max\{a,b\}` sind die geschweiften Klammern mit `\{` und `\}` maskiert.
 
