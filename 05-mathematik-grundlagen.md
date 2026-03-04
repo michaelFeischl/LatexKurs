@@ -71,6 +71,6 @@ In `align` richtet `&` die Zeilen an derselben Stelle aus (hier am Gleichheitsze
 ```latex
 \usepackage{amsmath,amssymb,amsthm}
 ```
-`amsmath` liefert Umgebungen wie `align`, `amssymb` ergänzt mathematische Symbole, und `amsthm` stellt Theorem-/Beweis-Umgebungen bereit.
+`amsmath`  liefert Umgebungen wie `align`, `amssymb` ergänzt mathematische Symbole, und `amsthm` stellt Theorem-/Beweis-Umgebungen bereit.
 
 Diese Kombination deckt den Großteil wissenschaftlicher Standardfälle ab.
