@@ -79,4 +79,4 @@ Beispiel:
 - kurze, klare Sätze,
 - konsistente Terminologie,
 - keine manuelle Abstandsakrobatik,
-- saubere Struktur vor Formatdetails.
+- saubere Struktur vor Formatdetails und Ausrichtung.
