@@ -27,8 +27,7 @@ Nach dem Durcharbeiten kannst du:
 1. Kapitel nacheinander durcharbeiten.
 2. Beispiele abtippen und lokal testen.
 3. Nach jedem Abschnitt kurze eigene Variante bauen.
-4. Am Ende die Projektübungen bearbeiten.
 
 ```{tip}
-LaTeX lernt man am schnellsten über kleine, saubere Experimente mit häufigen Kompilierläufen.
+LaTeX lernt man am schnellsten über kleine, saubere Experimente mit häufigen Kompilierdurchgängen.
 ```

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/00 Intro</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Intro_Setups</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche zwei Arbeitsweisen werden im Kurs explizit genannt?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Lokal mit TeX-Distribution und online mit Overleaf</text><feedback format="html"><text><![CDATA[<p>Genau das sind die beiden Setups im Kurs.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur handschriftliche Formeln und Word-Export</text><feedback format="html"><text><![CDATA[<p>Das gehört nicht zum Kursworkflow.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Overleaf, ohne lokale Option</text><feedback format="html"><text><![CDATA[<p>Lokales Arbeiten ist ebenfalls Teil des Kurses.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur LaTeX im Browser ohne Dateien</text><feedback format="html"><text><![CDATA[<p>Dateibasierte Arbeit ist zentral.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>Intro_Lernziel</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Ein Lernziel ist, reproduzierbare PDF-Ergebnisse aus Quelltext zu erzeugen.</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>1.0000000</penalty><hidden>0</hidden>
+    <answer fraction="100"><text>true</text><feedback format="html"><text><![CDATA[<p>Richtig, reproduzierbarer Satz ist ein Kernziel.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>false</text><feedback format="html"><text><![CDATA[<p>Falsch, genau das ist ein zentrales Kursziel.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/01 Workflow</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Workflow_Grundidee</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was ist die Grundidee des LaTeX-Workflows laut Kurs?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Quelltext schreiben statt Direktformatierung</text><feedback format="html"><text><![CDATA[<p>Genau: Inhalt/Struktur im Quelltext, Satz durch LaTeX.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Layout manuell in jeder Zeile steuern</text><feedback format="html"><text><![CDATA[<p>Das widerspricht dem Ansatz.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur PDF nachträglich bearbeiten</text><feedback format="html"><text><![CDATA[<p>Nicht der empfohlene Weg.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Direkt in PowerPoint setzen</text><feedback format="html"><text><![CDATA[<p>Das ist kein LaTeX-Workflow.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Workflow_Projektstruktur</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Struktur ist im Kurs als sinnvoll beschrieben?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Hauptdatei plus Kapiteldateien und geordnete Unterordner</text><feedback format="html"><text><![CDATA[<p>Richtig: modulare Dateistruktur.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Alles in einer einzigen riesigen .tex-Datei</text><feedback format="html"><text><![CDATA[<p>Unübersichtlich und nicht empfohlen.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Binärdateien ohne Quelltext</text><feedback format="html"><text><![CDATA[<p>Quelltext ist zentral.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Keine Ordner, nur Desktop-Dateien</text><feedback format="html"><text><![CDATA[<p>Nicht reproduzierbar/übersichtlich.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/02 Installation</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Install_BasicTools</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Werkzeuge sind für den Grundbetrieb nötig?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>TeX-Distribution und Editor</text><feedback format="html"><text><![CDATA[<p>Genau, das ist die Basis.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur ein PDF-Viewer</text><feedback format="html"><text><![CDATA[<p>Reicht nicht zum Kompilieren.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Git, ohne TeX-Distribution</text><feedback format="html"><text><![CDATA[<p>Git ist nützlich, aber nicht ausreichend.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Browser und Druckertreiber</text><feedback format="html"><text><![CDATA[<p>Keine LaTeX-Kompilierung damit.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Install_BuildWithBiber</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Build-Reihenfolge ist mit Literaturverwaltung (biblatex+biber) korrekt?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>pdflatex - biber - pdflatex - pdflatex</text><feedback format="html"><text><![CDATA[<p>Richtig, so werden Zitate/Verzeichnis stabil.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>biber - pdflatex</text><feedback format="html"><text><![CDATA[<p>Zu kurz und falsche Reihenfolge.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur pdflatex einmal</text><feedback format="html"><text><![CDATA[<p>Reicht bei Literatur nicht.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>makeindex - pdflatex - biber</text><feedback format="html"><text><![CDATA[<p>Index ist ein anderer Prozess.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/03 Praeambel</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Praeambel_HyperrefOrder</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Warum wird <code>hyperref</code> typischerweise weit hinten geladen?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Um Paketkonflikte zu minimieren</text><feedback format="html"><text><![CDATA[<p>Genau, das ist die Standardempfehlung.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Damit Bilder schneller laden</text><feedback format="html"><text><![CDATA[<p>Kein Hauptgrund.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Weil sonst UTF-8 deaktiviert wird</text><feedback format="html"><text><![CDATA[<p>So hängt das nicht zusammen.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Damit es nur in Beamer funktioniert</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Praeambel_PackageRole</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welches Paket liefert saubere deutschsprachige Anführungszeichen?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>csquotes</text><feedback format="html"><text><![CDATA[<p>Richtig, in Kombination mit der Spracheinstellung.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>booktabs</text><feedback format="html"><text><![CDATA[<p>booktabs ist für Tabellenlinien.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>graphicx</text><feedback format="html"><text><![CDATA[<p>graphicx ist für Grafiken.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>amsthm</text><feedback format="html"><text><![CDATA[<p>amsthm ist für Theoremumgebungen.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/04 Textsatz</text></category>
+  </question>
+
+  <question type="truefalse">
+    <name><text>Textsatz_Absatz</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Eine Leerzeile im Quelltext erzeugt einen neuen Absatz.</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>1.0000000</penalty><hidden>0</hidden>
+    <answer fraction="100"><text>true</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>false</text><feedback format="html"><text><![CDATA[<p>Falsch, genau so entstehen Absätze.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Textsatz_Ausrichtung</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Aussage zur Ausrichtung trifft den Kursinhalt?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Blocksatz ist Standard; rechtsbündig nur wenn unbedingt nötig</text><feedback format="html"><text><![CDATA[<p>Genau so ist es formuliert.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Rechtsbündig ist der empfohlene Standard für Fließtext</text><feedback format="html"><text><![CDATA[<p>Das Gegenteil ist der Fall.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur zentrierter Fließtext ist korrekt</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Blocksatz funktioniert ohne Silbentrennung besser</text><feedback format="html"><text><![CDATA[<p>Silbentrennung ist gerade wichtig.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/05 Struktur und Verweise</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Struktur_SectionStar</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was bewirkt <code>\section*{...}</code>?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Unnummerierte Überschrift, standardmäßig ohne TOC-Eintrag</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nummerierte Überschrift mit doppelter Zählung</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur in beamer gültig</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Erzeugt automatisch ein Literaturverzeichnis</text><feedback format="html"><text><![CDATA[<p>Unzutreffend.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Struktur_LabelAfterCaption</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Wo sollte bei Floats das <code>\label</code> stehen?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Direkt nach der \caption</text><feedback format="html"><text><![CDATA[<p>Richtig, dann stimmt die Referenznummer.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Ganz am Dokumentanfang</text><feedback format="html"><text><![CDATA[<p>Nicht sinnvoll.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur in der Präambel</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Beliebig, die Nummer ist immer gleich</text><feedback format="html"><text><![CDATA[<p>Das ist falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/06 Mathematik Grundlagen</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>MathBasic_InlineVsDisplay</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Markierung setzt eine abgesetzte, unnummerierte Formel?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>\[ ... \]</text><feedback format="html"><text><![CDATA[<p>Genau.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\begin{equation*} ... \end{figure}</text><feedback format="html"><text><![CDATA[<p>Ungültig kombiniert.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\textbf{...}</text><feedback format="html"><text><![CDATA[<p>Kein Mathemodus.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\item ...</text><feedback format="html"><text><![CDATA[<p>Listeneintrag, keine Formel.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>MathBasic_Symbols</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Notation ist für skalierte Normklammern korrekt?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>\left\| x \right\|</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>|x| mit Word-Automatismus</text><feedback format="html"><text><![CDATA[<p>Nicht der LaTeX-Befehl aus dem Kurs.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\left( x \right)</text><feedback format="html"><text><![CDATA[<p>Das sind runde Klammern, keine Norm.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\norm{x}</text><feedback format="html"><text><![CDATA[<p>Nur mit eigenem Makro definiert.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/07 Mathematik Fortgeschritten</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>MathAdv_AlignAmpersand</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Funktion hat <code>&amp;</code> in der <code>align</code>-Umgebung?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Markiert die gemeinsame Ausrichtungsstelle</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Erzeugt einen Seitenumbruch</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Unterdrückt automatisch Nummern</text><feedback format="html"><text><![CDATA[<p>Dafür gibt es z. B. \notag.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Importiert amsmath</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>MathAdv_Intertext</text></name>
+    <questiontext format="html"><text><![CDATA[<p><code>\intertext{...}</code> erlaubt erklärenden Text zwischen align-Zeilen.</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>1.0000000</penalty><hidden>0</hidden>
+    <answer fraction="100"><text>true</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>false</text><feedback format="html"><text><![CDATA[<p>Falsch, genau dafür ist \intertext da.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/08 Makros</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Makros_NewcommandArgs</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Wofür steht <code>#1</code> in einem mit <code>\newcommand</code> definierten Makro?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Für das erste Makroargument</text><feedback format="html"><text><![CDATA[<p>Genau.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Für eine Kapitelnummer</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Für den Dateinamen der Präambel</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Für eine Zufallszahl</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Makros_Redefinition</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welcher Befehl ist vorgesehen, um einen bestehenden Befehl bewusst neu zu definieren?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>\renewcommand</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\addcommand</text><feedback format="html"><text><![CDATA[<p>Diesen Standardbefehl gibt es so nicht.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\replacecommand</text><feedback format="html"><text><![CDATA[<p>Kein Standard-LaTeX-Befehl.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\newenvironment*</text><feedback format="html"><text><![CDATA[<p>Falscher Kontext.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/09 Zaehler und Theoreme</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Counter_Numberwithin</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was bewirkt <code>\numberwithin{equation}{section}</code>?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Gleichungsnummern werden pro Section geführt (z. B. 2.3)</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Alle Gleichungen werden ohne Nummern gesetzt</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Theoreme werden nummeriert</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Sections verschwinden aus dem Inhaltsverzeichnis</text><feedback format="html"><text><![CDATA[<p>Unzutreffend.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>Counter_Amsthm</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Das Paket <code>amsthm</code> liefert Werkzeuge für Theorem- und Beweisumgebungen.</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>1.0000000</penalty><hidden>0</hidden>
+    <answer fraction="100"><text>true</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>false</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/10 Tabellen und Layout</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Table_TabularColumns</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was bedeutet die Spaltenspezifikation <code>{lcr}</code> in <code>tabular</code>?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>links, zentriert, rechts</text><feedback format="html"><text><![CDATA[<p>Genau.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>line, center, row</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>long, compact, regular</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>link, color, rotate</text><feedback format="html"><text><![CDATA[<p>Unzutreffend.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Table_Booktabs</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Befehle gehören zu <code>booktabs</code>?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>\toprule, \midrule, \bottomrule</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\headline, \centerline, \footline</text><feedback format="html"><text><![CDATA[<p>Keine booktabs-Befehle.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\hline, \vline, \xline</text><feedback format="html"><text><![CDATA[<p>Nicht die typografisch bevorzugte booktabs-Trias.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\tablerule, \subrule, \endrule</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/11 Abbildungen und Floats</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Figure_Graphicx</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welches Paket stellt <code>\includegraphics</code> bereit?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>graphicx</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>booktabs</text><feedback format="html"><text><![CDATA[<p>Tabellenpaket.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>makeidx</text><feedback format="html"><text><![CDATA[<p>Indexpaket.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>amsthm</text><feedback format="html"><text><![CDATA[<p>Theoremumgebungen.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Figure_EPS_PdfLatex</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Aussage zu <code>.eps</code> und <code>pdflatex</code> ist korrekt?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>pdflatex bindet .eps nicht direkt ein; .eps sollte zu .pdf konvertiert werden (oder epstopdf nutzen)</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>pdflatex bevorzugt .eps gegenüber .pdf</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>.eps funktioniert nur mit \tableofcontents</text><feedback format="html"><text><![CDATA[<p>Unsinnig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Für .eps braucht man zwingend beamer</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/12 Index</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Index_MarkEntry</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welcher Befehl markiert einen Indexeintrag im Text?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>\index{...}</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\printbibliography</text><feedback format="html"><text><![CDATA[<p>Das druckt Literatur, keinen Index.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\maketitle</text><feedback format="html"><text><![CDATA[<p>Hat mit Index nichts zu tun.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>\cite{...}</text><feedback format="html"><text><![CDATA[<p>Zitiert Quellen statt Indexeintrag.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Index_BuildStep</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welches Tool verarbeitet typischerweise die .idx-Datei zum Index?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>makeindex</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>biber</text><feedback format="html"><text><![CDATA[<p>biber ist für Literaturdaten.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>dvips</text><feedback format="html"><text><![CDATA[<p>Anderer Prozessschritt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>epstopdf</text><feedback format="html"><text><![CDATA[<p>Bildkonvertierung.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/13 Literatur</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Lit_BiblatexBiber</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welcher moderne Standard wird im Kurs für Literatur empfohlen?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>biblatex mit biber</text><feedback format="html"><text><![CDATA[<p>Genau.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur \bibliographystyle ohne .bib-Datei</text><feedback format="html"><text><![CDATA[<p>Nicht der empfohlene Standard hier.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Handgeschriebenes Literaturverzeichnis</text><feedback format="html"><text><![CDATA[<p>Nicht reproduzierbar.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Nur Endnoten ohne Quellenverwaltung</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Lit_MathscinetArxiv</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Aussage zu MathSciNet/arXiv entspricht dem Kapitel?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>MathSciNet liefert kuratierte bibliografische Daten; arXiv liefert Preprints mit stabiler Kennung</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Beide Quellen ersetzen grundsätzlich DOI und Journalangaben</text><feedback format="html"><text><![CDATA[<p>Nein, Publikationsdaten sollten ergänzt werden.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>arXiv hat keine zitierbaren Identifikatoren</text><feedback format="html"><text><![CDATA[<p>Falsch, arXiv-ID ist stabil.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>MathSciNet ist nur für Bilder und Floats gedacht</text><feedback format="html"><text><![CDATA[<p>Unzutreffend.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/14 Build und Fehlersuche</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Build_UndefinedControlSequence</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was ist eine häufige Ursache für <code>Undefined control sequence</code>?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Tippfehler im Befehl oder fehlendes Paket</text><feedback format="html"><text><![CDATA[<p>Korrekt.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Zu viele PDF-Seiten</text><feedback format="html"><text><![CDATA[<p>Nicht die Ursache.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Zu viele Leerzeilen</text><feedback format="html"><text><![CDATA[<p>Unwahrscheinlich als diese Fehlermeldung.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Fehlende Internetverbindung</text><feedback format="html"><text><![CDATA[<p>Kein typischer Grund für diese Meldung.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>Build_RunawayArgument</text></name>
+    <questiontext format="html"><text><![CDATA[<p><code>Runaway argument</code> deutet oft auf eine fehlende schließende Klammer hin.</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>1.0000000</penalty><hidden>0</hidden>
+    <answer fraction="100"><text>true</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>false</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="category">
+    <category><text>$course$/top/LaTeX-Grundkurs/15 Beamer</text></category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Beamer_Frame</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Welche Umgebung entspricht in Beamer typischerweise einer Folie?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>frame</text><feedback format="html"><text><![CDATA[<p>Genau.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>table</text><feedback format="html"><text><![CDATA[<p>Tabellenfloat, keine Folie.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>minipage</text><feedback format="html"><text><![CDATA[<p>Layoutbaustein, keine Folienumgebung.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>equation</text><feedback format="html"><text><![CDATA[<p>Matheumgebung.</p>]]></text></feedback></answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Beamer_Handout</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Was bewirkt die Option <code>handout</code> in Beamer typischerweise?</p>]]></text></questiontext>
+    <defaultgrade>1.0000000</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+    <single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+    <answer fraction="100"><text>Overlays werden für eine druckfreundliche Fassung deaktiviert</text><feedback format="html"><text><![CDATA[<p>Richtig.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Alle Formeln werden automatisch entfernt</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Der Vortrag wird automatisch vertont</text><feedback format="html"><text><![CDATA[<p>Nein.</p>]]></text></feedback></answer>
+    <answer fraction="0"><text>Es werden automatisch neue Kapitel erzeugt</text><feedback format="html"><text><![CDATA[<p>Falsch.</p>]]></text></feedback></answer>
+  </question>
+
+</quiz>
