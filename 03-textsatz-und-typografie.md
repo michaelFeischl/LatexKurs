@@ -10,21 +10,20 @@ LaTeX versucht selbständig die bestmögliche Gestaltung des Textes zu finden. M
 
 ## 2. Absatzgestaltung
 
-```latex
-Dies ist der erste Absatz.
-Das ist kein neuer Absatz und auch kein Zeilenumbruch im PDF.
+| LaTeX-Code | Ergebnis |
+|---|---|
+| <pre><code class="language-latex">Dies ist der erste Absatz.<br>Das ist kein neuer Absatz und auch kein Zeilenumbruch im PDF.<br><br>Dies ist der zweite Absatz.</code></pre> | Dies ist der erste Absatz. Das ist kein neuer Absatz und auch kein Zeilenumbruch im PDF.<br><br>Dies ist der zweite Absatz. |
 
-Dies ist der zweite Absatz.
-```
 Die Leerzeile zwischen den Sätzen erzeugt einen neuen Absatz. Ohne Leerzeile würden beide Zeilen zum selben Absatz gehören.
 
 Absätze sollten inhaltlich begründet sein, nicht nur optisch.
 
 ## 3. Hervorhebungen richtig nutzen
 
-```latex
-\textbf{fett}, \textit{kursiv}, \emph{betont}
-```
+| LaTeX-Code | Ergebnis |
+|---|---|
+| <pre><code class="language-latex">\textbf{fett}, \textit{kursiv}, \emph{betont}</code></pre> | <strong>fett</strong>, <em>kursiv</em>, <em>betont</em> |
+
 Alle drei Befehle nutzen geschweifte Klammern für den Wirkbereich. `\emph{...}` ist semantisch, weil LaTeX je nach Kontext die passende Betonung wählt.
 
 Empfehlung:
@@ -35,17 +34,10 @@ Empfehlung:
 ## 4. Listen
 Nummerierte Listen `enumerate` und nicht-nummerierte Listen `itemize` können in LaTeX wie folgt erstellt werden. 
 
-```latex
-\begin{itemize}
-  \item Erstes Argument
-  \item Zweites Argument
-\end{itemize}
+| LaTeX-Code | Ergebnis |
+|---|---|
+| <pre><code class="language-latex">\begin{itemize}<br>  \item Erstes Argument<br>  \item Zweites Argument<br>\end{itemize}<br><br>\begin{enumerate}<br>  \item Schritt A<br>  \item Schritt B<br>\end{enumerate}</code></pre> | <ul><li>Erstes Argument</li><li>Zweites Argument</li></ul><ol><li>Schritt A</li><li>Schritt B</li></ol> |
 
-\begin{enumerate}
-  \item Schritt A
-  \item Schritt B
-\end{enumerate}
-```
 `\begin{...}` und `\end{...}` öffnen und schließen jeweils eine Umgebung. `\item` startet pro Listenpunkt einen neuen Eintrag.
 Die Umgebungen können beliebig tief geschachtelt werden.
 
@@ -63,9 +55,10 @@ Wenn eine andere Ausrichtung wirklich nötig ist:
 
 Folgende Zeichen müssen als Befehl gesetzt werden:
 
-```latex
-\% \$ \& \# \_ \{ \}
-```
+| LaTeX-Code | Ergebnis |
+|---|---|
+| <pre><code class="language-latex">\% \$ \& \# \_ \{ \}</code></pre> | % $ & # _ { } |
+
 Das vorangestellte `\` maskiert Sonderzeichen, damit sie als Zeichen und nicht als LaTeX-Steuerzeichen erscheinen.
 
 ## 7. Deutsche Typografie
@@ -75,9 +68,10 @@ Das vorangestellte `\` maskiert Sonderzeichen, damit sie als Zeichen und nicht a
 
 Beispiel:
 
-```latex
-\enquote{Das ist ein korrekt gesetztes Zitat.}
-```
+| LaTeX-Code | Ergebnis |
+|---|---|
+| <pre><code class="language-latex">\enquote{Das ist ein korrekt gesetztes Zitat.}</code></pre> | „Das ist ein korrekt gesetztes Zitat.“ |
+
 `\enquote{...}` setzt sprachabhängig korrekte Anführungszeichen. Über `babel`/`csquotes` passt sich die Form automatisch an die Dokumentsprache an.
 
 ## 8. Lesbarkeit verbessern
