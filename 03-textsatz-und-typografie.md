@@ -57,7 +57,7 @@ Folgende Zeichen müssen als Befehl gesetzt werden:
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">\% \$ \& \# \_ \{ \}</code></pre> | % $ & # _ { } |
+| <pre><code class="language-latex">\\% \\$ \\& \\# \\_ \\{ \\}</code></pre> | % $ & # _ { } |
 
 Das vorangestellte `\` maskiert Sonderzeichen, damit sie als Zeichen und nicht als LaTeX-Steuerzeichen erscheinen.
 
