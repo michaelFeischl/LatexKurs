@@ -6,8 +6,10 @@
 \section{Einleitung}
 \subsection{Problemstellung}
 \subsubsection{Beispieldaten}
+\section*{Danksagung}
 ```
 Die Befehle erzeugen hierarchische Überschriftenebenen. Die Titel stehen jeweils in `{...}` und erscheinen automatisch im Inhaltsverzeichnis.
+Die Sternform wie `\section*{...}` erzeugt eine unnummerierte Überschrift (standardmäßig ohne Eintrag im Inhaltsverzeichnis).
 
 In `report` und `book` kommt zusätzlich `\chapter{...}` dazu.
 
@@ -16,7 +18,7 @@ In `report` und `book` kommt zusätzlich `\chapter{...}` dazu.
 ```latex
 \tableofcontents
 ```
-`\tableofcontents` erstellt das Inhaltsverzeichnis aus den vorhandenen Überschriften. Nach Strukturänderungen sind meist zwei Läufe nötig, damit alles aktuell ist.
+`\tableofcontents` erstellt das Inhaltsverzeichnis aus den vorhandenen Überschriften. Nach Strukturänderungen sind meist zwei Kompilierdurchgänge nötig, damit alles aktuell ist.
 
 Nach Änderungen an Überschriften: mindestens zweimal kompilieren.
 
@@ -42,7 +44,7 @@ Vgl. Gleichung~\eqref{eq:einstein}.
 
 ## 4. Label-Konventionen
 
-Empfehlte Präfixe:
+Empfohlene Präfixe um die Labels leichter zu finden:
 
 - `sec:` für Abschnitte
 - `fig:` für Abbildungen
@@ -61,7 +63,7 @@ Damit werden interne Verweise und Inhaltsverzeichnis-Einträge klickbar.
 
 ## 6. Typische Referenzprobleme
 
-- `??` im PDF: meist zu wenige Läufe oder falsches `\label`
+- `??` im PDF: meist zu wenige Kompilierdurchgänge oder falsches `\label`
 - falsche Nummer: Label versehentlich außerhalb der Umgebung gesetzt
 - Seitenverweis falsch: nach großen Umbrüchen erneut kompilieren
 
@@ -77,4 +79,4 @@ Damit werden interne Verweise und Inhaltsverzeichnis-Einträge klickbar.
 
 Wie in Abbildung~\ref{fig:messkurve} zu sehen, ...
 ```
-`[htbp]` sind Platzierungswünsche für den Float. `\caption` setzt die Beschriftung und Nummer, `\label` sollte direkt danach stehen, damit `\ref` korrekt auf die Abbildung zeigt.
+`[htbp]` sind Platzierungswünsche für die Grafik (siehe Kapitel Abbildungen). `\caption` setzt die Beschriftung und Nummer, `\label` sollte direkt danach stehen, damit `\ref` korrekt auf die Abbildung zeigt.

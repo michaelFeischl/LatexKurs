@@ -18,7 +18,14 @@ LaTeX muss kompiliert werden, d.h., der Quelltext muss in ein PDF übersetzt wer
 
 ## 2.1. Lokale Arbeit mit `pdflatex`
 
-Minimal Kompilierung im Terminal
+Siehe Kapitel "Installation". Vorteil von lokaler Installation:
+
+- Nur Open Source Software nötig
+- Unabhängig von Internetverbindung
+- Einfache Integration von gewohnten Entwicklungsumgebungen
+
+
+ Minimal Kompilierung im Terminal
 
 ```bash
 pdflatex main.tex
@@ -43,14 +50,20 @@ Warum mehrere Kompilierdurchgänge?
 
 Overleaf ist praktisch für schnellen Start und Zusammenarbeit (www.overleaf.com), benötigt aber einen Account.
 
+- Overleaf hat einen online Editor und Kompiler
+- Overleaf erlaubt den Download von Quelltext und PDF
+- Braucht eine stabile Internetverbindung
+- Overleaf ist in der Grundversion gratis, gehört aber zu einer For-Profit Firma, d.h., es gibt keine Garantie, dass es immer gratis bleibt.
+
+
+
+## 4. Empfohlene Projektstruktur
 Empfohlene Regeln:
 
 - klare Ordnerstruktur,
 - sprechende Dateinamen,
 - keine riesige `main.tex`, sondern Kapiteldateien,
 - Warnungen aktiv prüfen, nicht ignorieren.
-
-## 4. Empfohlene Projektstruktur
 
 ```text
 projekt/

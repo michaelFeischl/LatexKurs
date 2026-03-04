@@ -1,4 +1,6 @@
-# Beamer ausführlich: Folien, Overlays, Handout
+# Beamer Klasse: Folien, Overlays, Handout
+
+Die Beamer Klasse ermöglicht es mit LaTeX Präsentationen zu erstellen. Besonders für mathematische Vorträge mit vielen Formeln und weniger Bildern, ist dies deutlich komfortabler als klassische Präsentationssoftware.
 
 ## 1. Start mit Beamer
 
@@ -96,4 +98,4 @@ pdflatex vortrag.tex
 pdflatex vortrag.tex
 ```
 
-Bei Inhaltsverzeichnis/Referenzen sind mehrere Läufe normal.
+Bei Inhaltsverzeichnis/Referenzen sind mehrere Kompilierdurchgänge normal.

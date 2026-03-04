@@ -29,8 +29,9 @@ Beim Aufruf werden die zwei Argumente in die vorher definierten Platzhalter eing
 ```latex
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 \newcommand{\skalar}[2]{\left\langle #1,#2 \right\rangle}
+\newcommand{\integral}[2][x]{\int #2\,d#1}
 ```
-`[1]` bzw. `[2]` gibt die Anzahl der Pflichtargumente an. `\left...\right` sorgt auch hier für automatisch passende Klammergrößen.
+`[1]` bzw. `[2]` gibt die Anzahl der Pflichtargumente an. Bei `\integral` ist das erste Argument optional mit Standardwert `x`. Aufrufbeispiele: `\integral{f}` ergibt $\int f\, dx$, `\integral[y]{f}` ergibt $\int f\, dy$.
 
 ## 3. Bestehende Befehle sicher ersetzen
 
@@ -65,5 +66,8 @@ Gut:
 \newtheorem{korollar}[satz]{Korollar}
 ```
 Die erste Zeile erzeugt den Zähler `satz` pro `section`. `lemma` und `korollar` teilen sich denselben Zähler durch die Referenz `[satz]`.
+Dadurch bleibt die Reihenfolge über alle Aussage-Typen hinweg konsistent: Nach `Satz 2.1` kann direkt `Lemma 2.2` folgen.
+Ohne gemeinsame Zähler würden getrennte Reihen entstehen (z. B. `Satz 2.1`, aber gleichzeitig `Lemma 2.1`), was Verweise unübersichtlicher macht.
+Praktisch ist diese Struktur auch für Referenzen: Mit Labels wie `\label{thm:...}` und `\label{lem:...}` bleibt die Nummerierung eindeutig, aber fachlich sauber getrennt.
 
 So teilen sich alle Umgebungen eine gemeinsame Nummerierung pro Abschnitt.

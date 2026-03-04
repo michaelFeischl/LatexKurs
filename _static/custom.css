@@ -71,6 +71,25 @@ table thead {
   background: #f0e4d1;
 }
 
+/* More space for rendered formulas (including equation numbers) in 2-column demo tables */
+.bd-article table th:first-child,
+.bd-article table td:first-child {
+  width: 38%;
+}
+
+.bd-article table th:nth-child(2),
+.bd-article table td:nth-child(2) {
+  width: 62%;
+}
+
+.bd-article table td:nth-child(2) {
+  overflow-x: auto;
+}
+
+.bd-article table td:nth-child(2) mjx-container[display="true"] {
+  margin: 0.35rem 0;
+}
+
 .admonition {
   border-radius: 10px;
   border-width: 1px;

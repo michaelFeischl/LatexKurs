@@ -1,5 +1,7 @@
 # Textsatz, Absätze und Typografie
 
+LaTeX versucht selbständig die bestmögliche Gestaltung des Textes zu finden. Man sollte nicht zu viele Vorgaben wie Zeilenumbrüche erzwingen, sondern sich eher auf die interne Optimierung verlassen.
+
 ## 1. Grundregeln des Textsatzes
 
 - Mehrere Leerzeichen im Quelltext werden zu einem Leerzeichen.
@@ -10,6 +12,7 @@
 
 ```latex
 Dies ist der erste Absatz.
+Das ist kein neuer Absatz und auch kein Zeilenumbruch im PDF.
 
 Dies ist der zweite Absatz.
 ```
@@ -30,6 +33,7 @@ Empfehlung:
 - nicht mehrere Hervorhebungsarten gleichzeitig stapeln.
 
 ## 4. Listen
+Nummerierte Listen `enumerate` und nicht-nummerierte Listen `itemize` können in LaTeX wie folgt erstellt werden. 
 
 ```latex
 \begin{itemize}
@@ -43,11 +47,17 @@ Empfehlung:
 \end{enumerate}
 ```
 `\begin{...}` und `\end{...}` öffnen und schließen jeweils eine Umgebung. `\item` startet pro Listenpunkt einen neuen Eintrag.
+Die Umgebungen können beliebig tief geschachtelt werden.
 
 ## 5. Ausrichtung und Blocksatz
 
 Standard in LaTeX ist Blocksatz mit guter Silbentrennung.
 Manuelle Eingriffe sollten selten sein.
+
+Wenn eine andere Ausrichtung wirklich nötig ist:
+
+- linksbündig: `\begin{flushleft} ... \end{flushleft}` (oder lokal `\raggedright`)
+- rechtsbündig: `\begin{flushright} ... \end{flushright}` (oder lokal `\raggedleft`) - nur wenn unbedingt nötig, z. B. für spezielle Layout-Elemente
 
 ## 6. Sonderzeichen im Text
 

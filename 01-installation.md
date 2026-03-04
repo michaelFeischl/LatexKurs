@@ -109,7 +109,7 @@ pdflatex main.tex
 
 Ursache: LaTeX nicht installiert oder `PATH` nicht korrekt gesetzt.
 
-### Pakete fehlen beim ersten Lauf
+### Pakete fehlen beim ersten Kompilierdurchgang
 
 Ursache: unvollständige Installation.
 Lösung: vollständige TeX-Distribution installieren bzw. fehlende Pakete nachinstallieren.

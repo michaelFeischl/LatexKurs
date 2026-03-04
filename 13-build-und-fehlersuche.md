@@ -2,7 +2,7 @@
 
 ## 1. Was passiert beim Kompilieren?
 
-Beim Lauf mit `pdflatex` entstehen Hilfsdateien, in denen Informationen
+Beim Kompilierdurchgang mit `pdflatex` entstehen Hilfsdateien, in denen Informationen
 für Verzeichnisse, Referenzen und Literatur gespeichert werden.
 
 ## 2. Typische Dateien
