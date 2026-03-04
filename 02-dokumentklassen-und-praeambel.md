@@ -2,7 +2,7 @@
 
 ## 1. Dokumentklasse wählen
 
-Die Klasse bestimmt Grundstruktur und Standardlayout.
+Die Klasse bestimmt Grundstruktur und das Layout.
 
 ```latex
 \documentclass[a4paper,11pt]{article}
