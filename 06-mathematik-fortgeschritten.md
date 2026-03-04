@@ -26,7 +26,7 @@ Für Zwischenkommentare in mehrzeiligen Formeln:
 
 | LaTeX-Code | Ergebnis |
 |---|---|
-| <pre><code class="language-latex">\begin{align}<br>  f(x) &= x^2 + 1 \\\\<br>  \intertext{Nun differenzieren wir:}<br>  f'(x) &= 2x<br>\end{align}</code></pre> | $$\begin{align} f(x) &= x^2 + 1 \\ f'(x) &= 2x \end{align}$$ |
+| <pre><code class="language-latex">\begin{align}<br>  f(x) &= x^2 + 1 \\\\<br>  \intertext{Nun differenzieren wir:}<br>  f'(x) &= 2x<br>\end{align}</code></pre> | $$\begin{align} f(x) &= x^2 + 1 \\ \text{Nun }&\text{differenzieren wir}\notag\\ f'(x) &= 2x \end{align}$$ |
 
 `\intertext{...}` fügt zwischen zwei Align-Zeilen erklärenden Fließtext ein, ohne die Ausrichtung zu zerstören.
 

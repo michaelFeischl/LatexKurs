@@ -24,7 +24,23 @@
 - Diagramme/Grafiken: PDF (vektorbasiert)
 - Fotos: PNG/JPG (auflösungsabhängig)
 
-## 4. Floatoptionen verstehen
+## 4. `.eps` und `pdflatex`
+
+`pdflatex` kann `.eps`-Dateien nicht direkt einbinden. Für einen `pdflatex`-Workflow sind deshalb zwei Wege üblich:
+
+1. `.eps` vorab nach `.pdf` konvertieren (empfohlen), dann die PDF-Datei mit `\includegraphics` einbinden.
+2. mit `epstopdf` arbeiten, damit beim Build automatisch eine PDF-Version erzeugt wird.
+
+Beispiel:
+
+```latex
+\usepackage{graphicx}
+\usepackage{epstopdf}
+```
+
+Wenn ein Projekt zwingend bei `.eps` bleiben muss, kann alternativ die klassische Kette `latex -> dvips -> ps2pdf` verwendet werden statt `pdflatex`.
+
+## 5. Floatoptionen verstehen
 
 - `h`: hier (Wunsch)
 - `t`: Seitenanfang
@@ -33,7 +49,7 @@
 
 Wichtig: LaTeX entscheidet final nach Umbruchregeln.
 
-## 5. Abbildungs- und Tabellenverzeichnis
+## 6. Abbildungs- und Tabellenverzeichnis
 
 ```latex
 \listoffigures
@@ -41,14 +57,14 @@ Wichtig: LaTeX entscheidet final nach Umbruchregeln.
 ```
 Diese Befehle erzeugen automatisch Verzeichnisse aus vorhandenen `figure`- und `table`-Beschriftungen.
 
-## 6. Häufige Fehler
+## 7. Häufige Fehler
 
 - Bilddatei nicht gefunden (Pfad/Name prüfen)
 - zu große Bilder ohne Skalierung
 - fehlende `\caption`/`\label`
 - Verweis im Text fehlt
 
-## 7. Gute wissenschaftliche Praxis
+## 8. Gute wissenschaftliche Praxis
 
 - jede Abbildung hat eine Aussage,
 - Beschriftung erklärt Inhalt, nicht nur "Plot 1",

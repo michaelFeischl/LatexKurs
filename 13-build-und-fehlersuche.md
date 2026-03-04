@@ -60,7 +60,7 @@ Dateiname/Pfad falsch oder Datei nicht im Projekt.
 ## 6. Warnungen ernst nehmen
 
 Nicht jede Warnung ist kritisch, aber wiederkehrende Warnungen
-führen oft zu späteren Layout- oder Referenzproblemen.
+führen oft zu späteren Layout- oder Referenzproblemen. Vorallem `Overleaf` ignoriert viele Fehler und liefert trotzdem Output. Falls das irgendwann dann doch nicht mehr funktioniert ist die Fehlersuche sehr mühsam.
 
 ## 7. Checkliste vor Abgabe
 

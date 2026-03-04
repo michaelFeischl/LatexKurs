@@ -73,12 +73,42 @@ pdflatex main.tex
 - Jahr/Verlag/DOI (falls vorhanden) ergänzen,
 - Schlüssel sprechend benennen.
 
-## 6. Historischer Hintergrund
+## 6. Quellen aus MathSciNet und arXiv
+
+Für mathematische Literatur sind MathSciNet und arXiv besonders wichtig:
+
+- MathSciNet liefert kuratierte bibliografische Daten, oft inkl. `doi`, Journaldaten und `mrnumber`.
+- arXiv liefert Preprints mit stabiler Kennung (z. B. `arXiv:2101.01234`), oft vor der Journalveröffentlichung.
+
+Praktischer Workflow:
+
+1. Eintrag aus MathSciNet/arXiv übernehmen.
+2. Metadaten prüfen (Autor:innen, Titel, Jahr, Journal).
+3. Bei arXiv nach Möglichkeit zusätzlich DOI/Journaldaten ergänzen, sobald publiziert.
+4. Einen stabilen, sprechenden Schlüssel vergeben.
+
+Beispiel für arXiv mit `biblatex`-Feldern:
+
+```bibtex
+@online{beispiel2021,
+  author       = {Max Beispiel and Erika Muster},
+  title        = {Ein interessantes Resultat},
+  year         = {2021},
+  eprint       = {2101.01234},
+  eprinttype   = {arxiv},
+  eprintclass  = {math.NT},
+  url          = {https://arxiv.org/abs/2101.01234}
+}
+```
+
+Für veröffentlichte Arbeiten sollte die zitierfähige Journalversion bevorzugt werden; die arXiv-Version bleibt als Ergänzung sinnvoll.
+
+## 7. Historischer Hintergrund
 
 In älteren Kursen wurde oft BibTeX mit `\bibliographystyle`/`\bibliography` verwendet.
 Der heutige Standard in diesem Kurs ist `biblatex` + `biber`, weil er flexibler und sprachsensibler ist.
 
-## 7. Typische Literaturfehler
+## 8. Typische Literaturfehler
 
 - `Citation ... undefined`: Schlüssel fehlt oder Tippfehler
 - leeres Verzeichnis: `biber` nicht ausgeführt
